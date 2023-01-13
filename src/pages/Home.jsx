@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "../components/Carousel";
+import NewsLetter from "../components/NewsLetter";
 import Sales from "../components/Sales";
 
 function Home() {
@@ -25,7 +26,7 @@ function Home() {
               <Typography variant="h5">Empire Realty of Florida, Inc</Typography>
               <img style={{width:233,height:100}} src={'https://res.cloudinary.com/cmacha2/image/upload/v1673573252/czbUxZG_5ssXRva0Hn6CDr5da09GEyRCjMTDf4PrPZA_ioryzo.png'} />
             </Box>
-            <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',paddingX:3,gap:5}}>
+            <Box sx={{display:'flex',paddingX:3,gap:5,justifyContent:'center',alignItems:'center',flexDirection:'column',}}>
               <Box sx={{display:"flex",justifyContent:'center',alignItems:'center',flexDirection:'column',width:'70%',marginLeft:'auto',marginRight:'auto',gap:5,textAlign:'center'}}>
                 <Typography variant="h4">My Background</Typography>
                 <Typography variant="h6" >Hello and welcome! Thank you so much for exploring these pages of my website. I hope you find the content here useful and informative. I've been in this business for a while now and helping you make the best possible decisions is my number one priority.</Typography>
@@ -39,7 +40,9 @@ function Home() {
         </Box>
       </Box>
       <Box>
-        <Box></Box>
+        <Box>
+          <NewsLetter/>
+        </Box>
         <Box></Box>
         <Box></Box>
         <Box></Box>

@@ -6,6 +6,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 const oldSales = [
@@ -73,12 +75,43 @@ const oldSales = [
         "city_state_zipcode": "Hollywood, FL, 33027",
         "latitude": 26.006632,
         "longitude": -80.323364
-    }
+    },
+      {
+          "represented": "Seller",
+          "sold_date": "5/2/2022",
+          "price": "$340,000",
+          "zpid": 44018930,
+          "image_url": "https://photos.zillowstatic.com/fp/9bf15f7d35e0ddf5164f3621b85c03d4-p_b.jpg",
+          "image_alt": "425 NW 13th St, Florida City, FL, 33034",
+          "home_details_url": "https://www.zillow.com/homedetails/425-NW-13th-St-Florida-City-FL-33034/44018930_zpid/",
+          "street_address": "425 NW 13th St",
+          "city_state_zipcode": "Florida City, FL, 33034",
+          "latitude": 25.459667,
+          "longitude": -80.4823
+      },
+      {
+          "represented": "Seller",
+          "sold_date": "4/8/2022",
+          "price": "$27,000",
+          "zpid": 108408026,
+          "image_url": "https://photos.zillowstatic.com/fp/92d88e365dc0f5c4ae959ffb9fda7404-p_b.jpg",
+          "image_alt": "7046 Brazil Cir, Labelle, FL, 33935",
+          "home_details_url": "https://www.zillow.com/homedetails/7046-Brazil-Cir-Labelle-FL-33935/108408026_zpid/",
+          "street_address": "7046 Brazil Cir",
+          "city_state_zipcode": "Labelle, FL, 33935",
+          "latitude": 26.734652,
+          "longitude": -81.37958
+      },
+      
 ]
 
 
 export default function BasicTable() {
   return (
+    <Box sx={{textAlign:'center'}}>
+      <Box sx={{paddingBottom:5}}>
+        <Typography variant='h4'>Latest Sales</Typography>
+      </Box>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -91,20 +124,32 @@ export default function BasicTable() {
         </TableHead>
         <TableBody>
           {oldSales.map((row) => (
+          
             <TableRow
               key={row.zpid}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.image_alt}
+                <a href={row.home_details_url} target='_blank' style={{textDecoration:'none'}}>
+                <Box sx={{display:'flex',flexDirection:'row',gap:3}}>
+                  <img src={row.image_url} />
+                  <Box>
+                    <Typography>{row.street_address}</Typography>
+                    <Typography>{row.city_state_zipcode}</Typography>
+                  </Box>
+                </Box>
+                </a>
               </TableCell>
               <TableCell align="right">{row.sold_date}</TableCell>
               <TableCell align="right">{row.price}</TableCell>
               <TableCell align="right">{row.represented}</TableCell>
+
             </TableRow>
           ))}
         </TableBody>
+        
       </Table>
     </TableContainer>
+    </Box>
   );
 }
