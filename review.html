@@ -1,60 +1,1167 @@
-<html><head><meta name="robots" content="noindex, nofollow"/><link
-    href="https://www.zillowstatic.com/vstatic/80d5e73/static/css/z-pages/captcha.css"
-    type="text/css" rel="stylesheet" media="screen"/><script>
-      window._pxAppId = 'PXHYx10rg3';
-      window._pxJsClientSrc = '/HYx10rg3/init.js';
-      window._pxHostUrl = '/HYx10rg3/xhr';
-      window._pxFirstPartyEnabled = true;
-      window._pxreCaptchaTheme='light';
-  </script><script
-    type="text/javascript"
-    src="https://captcha.px-cdn.net/PXHYx10rg3/captcha.js?a=c&amp;m=0"></script>
-  <script>
-      function getQueryString(name, url) {
-          if (!url) url = window.location.href;
-          name = name.replace(/[\[\]]/g, "\\$&");
-          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-              results = regex.exec(url);
-          if (!results) return null;
-          if (!results[2]) return '';
-          return decodeURIComponent(results[2].replace(/\+/g, " "));
-      }
-      document.addEventListener("DOMContentLoaded", function(e) {
-          var uuidVerifyRegExp = /^\{?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}?$/i;
-          document.getElementById("uuid").innerText = "UUID: " + uuidVerifyRegExp.exec(getQueryString("uuid"));
-      });
+<html lang="en"><head>
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <link href="https://s3.amazonaws.com/outboundengine/resources/fonts/fonts.css?family=Open+Sans:400italic,600italic,400,300,600,800" rel="stylesheet">
+    <meta property="og:image" content="https://content.outboundengine.com/uploads/original/56151/ceKQYetHWjbU7ahXnpYSy5u75T5gnF1qwt36AidRkrw.png">
+    <meta property="og:title" content="What are your goals for this year?">
+    <meta property="og:description" content="No matter your plans, this guide has tips for you.">
+    <meta property="og:url" content="https://wilmaalvarez.myhomehq.biz/get-tips-for-your-home-goals-in-2023">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="561591670558875">
+    <title>Have you set home-related goals this year?</title> 
+  <style type="text/css">
+        [style*='Calibri'] {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+        }
 
-      function handleCaptcha(response) {
-          var vid = getQueryString("vid"); // getQueryString is implemented below
-          var uuid = getQueryString("uuid");
-          var name = '_pxCaptcha';
-          var cookieValue =  btoa(JSON.stringify({r:response,v:vid,u:uuid}));
-          var cookieParts = [name, '=', cookieValue, '; path=/'];
-          cookieParts.push('; domain=' + window.location.hostname);
-          cookieParts.push('; max-age=10');//expire after 10 seconds
-          document.cookie = cookieParts.join('');
-          var originalURL = getOriginalUrl("url");
-          var originalHost = window.location.host;
-          var newHref = window.location.protocol + "//" + originalHost;
-          originalURL = originalURL || '/';
-          newHref = newHref + originalURL;
-          window.location.href = newHref;
-      }
+        @media only screen and (max-width: 504px) {
+            .full {
+                width: 100% !important;
+                min-width: 0 !important;
+            }
 
-      function getOriginalUrl(name) {
-          var url = getQueryString(name);
-          if (!url) return null;
-          var regExMatcher = new RegExp("(([^&#@]*)|&|#|$)");
-          var matches = regExMatcher.exec(url);
-          if (!matches) return null;
-          return matches[0];
-      }
-  </script></head><body><main
-    class="zsg-layout-content"><div class="error-content-block"><div
-        class="error-text-content"><!-- <h1>Captcha</h1> --><h5>Please verify
-          you're a human to continue.</h5><div id="content"
-          class="captcha-container"><div id="px-captcha"
-            data-callback="handleCaptcha"></div><img
-            src="https://www.zillowstatic.com/static/logos/logo-65x14.png"
-            width="65" alt="Zillow" height="14"></img></div></div></div></main><h4
-  id="uuid" class="uuid-string zsg-fineprint"></h4></body></html><!-- H:033  T:1ms  S:2605  R:Thu Jan 12 18:44:00 PST 2023  B:5.0.69940-master.ecf0bf4~qa,spring_4_pre.046ab2bf -->
+            .max {
+                max-width: none !important;
+            }
+
+            .flex {
+                width: 100% !important;
+                height: auto !important;
+                min-height: 1px !important;
+            }
+
+            .hidef {
+                display: none !important;
+                visibility: hidden;
+            }
+
+            .blockf {
+                display: block !important;
+            }
+
+            .alignCenter {
+                text-align: center !important;
+            }
+
+            .linkfix a,
+            .linkfix a span {
+                color: inherit !important;
+                text-decoration: none !important;
+            }
+
+            .linkfixu a,
+            .linkfixu a span {
+                color: inherit !important;
+                text-decoration: underline !important;
+            }
+
+            .pt0 {
+                padding-top: 0px !important;
+            }
+
+            .pt15 {
+                padding-top: 15px !important;
+            }
+
+            .pb0 {
+                padding-bottom: 0px !important;
+            }
+
+            .pb15 {
+                padding-bottom: 15px !important;
+            }
+
+            .pb30 {
+                padding-bottom: 30px !important;
+            }
+
+            .p0 {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+
+            .p10 {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            .p15 {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .p20 {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .pr16 {
+                padding-right: 16px !important;
+            }
+
+            .fs18 {
+                font-size: 18px !important;
+            }
+
+            .fs21 {
+                font-size: 21px !important;
+            }
+
+            .lh13 {
+                line-height: 1.3 !important;
+            }
+
+            .lh15 {
+                line-height: 1.5 !important;
+            }
+
+            .w20 {
+                width: 20px !important;
+                min-width: 20px !important;
+            }
+
+            .mobileRow {
+                display: table-row !important;
+            }
+
+            .buttonSwap {
+                display: block !important;
+                width: 100% !important;
+                max-width: 300px !important;
+                margin: 0 auto !important;
+                padding-bottom: 30px !important;
+            }
+
+            .buttonSwap a {
+                display: block !important;
+            }
+
+            .buttonSwap img {
+                width: auto !important;
+                height: 75px !important;
+                max-width: none !important;
+                max-height: none !important;
+                visibility: visible !important;
+                margin: 0 auto !important;
+            }
+
+            .hAuto {
+                height: auto !important;
+            }
+
+            .read-more {
+                text-align: center !important;
+            }
+
+            .read-more td {
+                height: 34px !important;
+                display: inline-block !important;
+                margin: 0 auto 20px !important;
+            }
+
+            .read-more td a {
+                font-size: 13px !important;
+                line-height: 34px !important;
+            }
+
+            .custom-content img {
+                display: inline-block !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 414px) and (max-device-width: 414px) {
+            .wrapper {
+                min-width: 414px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            .wrapper {
+                min-width: 375px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            .wrapper {
+                min-width: 320px !important;
+            }
+        }
+
+        @media yahoo {
+            .mobileCta {
+                display: none !important;
+            }
+        }
+    </style> 
+  <style type="text/css">
+        .gmail-font-fix {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+
+        body {
+            width: 100% !important;
+            min-width: 100%;
+            margin: 0;
+            margin: 0 auto !important;
+            padding: 0;
+            background-color: #ffffff;
+            font-weight: normal;
+            mso-text-raise: 0px;
+            color: #666666;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        div {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .ExternalClass {
+            width: 100% !important;
+            display: block !important;
+        }
+
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        div,
+        p,
+        li {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        br {
+            line-height: 1em;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            margin: 0;
+            border: 0;
+        }
+
+        sup {
+            vertical-align: super;
+            font-size: 60%;
+            line-height: 0.5em;
+        }
+
+        sub {
+            vertical-align: sub;
+            font-size: 60%;
+            line-height: 0.5em;
+        }
+
+        table,
+        td {
+            border-spacing: 0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        ol,
+        ul {
+            margin-left: 18px;
+            margin-top: 0px;
+            margin-right: 0px;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .white a,
+        .white a:link,
+        .white a:visited {
+            color: #ffffff;
+        }
+
+        .blue a,
+        .blue a:link,
+        .blue a:visited {
+            color: #6ba7c9;
+        }
+
+        .gray a,
+        .gray a:link,
+        .gray a:visited {
+            color: #666666;
+        }
+
+        .dkgray a,
+        .dkgray a:link,
+        .dkgray a:visited {
+            color: #333333;
+        }
+
+        [style*='linkfix'] a,
+        [style*='linkfix'] a span {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        [style*='linkfixu'] a,
+        [style*='linkfixu'] a span {
+            color: inherit !important;
+            text-decoration: underline !important;
+        }
+    </style> 
+  <!--[if gte mso 9]><style>
+        sup, sub { font-size:100% !important; line-height:1em !important; font-size:100%; line-height:1em; }
+        tr { font-size:1px; line-height:0.7pt; }
+        ul,ol { margin-left:24px !important; margin-left:24px; }
+    </style> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]--> 
+ </head> 
+ <body bgcolor="#ffffff" style="color: #666666; width:100% !important; min-width:100%; margin:0; margin:0 auto !important; padding:0; background-color:#ffffff; font-weight:normal; mso-text-raise:0px;"> 
+  <div align="left" style="color:#ffffff; font-size:1px; line-height:0; height:0; width:0; max-height:0; display:none; display:none !important; mso-hide:all; overflow:hidden;"> 
+   <span style="color:#ffffff !important"> Here's your guide -- whether buying, selling or making updates. &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; </span> 
+  </div> 
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;" class="wrapper"> 
+   <tbody>
+    <tr> 
+     <td align="center" bgcolor="#e8e8e8" class="full pt0" style="padding-top:15px; text-align:center;"> 
+      <center> 
+       <div style="max-width:650px;"> 
+        <!--[if (gte mso 9)|(IE)]><table width="650" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;"><tr><td width="650" valign="top"><![endif]--> 
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;"> 
+         <tbody>
+          <tr> 
+           <td bgcolor="#ffffff"> 
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+             <tbody>
+              <tr> 
+               <td class="pr16" bgcolor="#515458" style="padding-right:24px;" align="right"> 
+                <table cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                 <tbody>
+                  <tr> 
+                   <td style="border-right: 1px solid #ffffff;"> 
+                    <table> 
+                     <tbody>
+                      <tr> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-bottom: 1px solid #ffffff; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_PROFILE_PAGE" href="https://wilmaalvarez.myhomehq.biz/" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/oe_logo_circle.png" alt="oe_logo_circle" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-bottom: 1px solid #ffffff; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_WEBSITE" href="https://www.empirerealtyfl.com/" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/company.png" alt="company" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-bottom: 1px solid #ffffff; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_LINKEDIN" href="https://www.linkedin.com/in/wilma-alvarez-2624448" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/linkedin.png" alt="linkedin" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-bottom: 1px solid #ffffff; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_FACEBOOK" href="https://www.facebook.com/451563231627107" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/facebook.png" alt="facebook" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                      </tr> 
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                <table cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                 <tbody>
+                  <tr> 
+                   <td style="border-right: 1px solid #ffffff;"> 
+                    <table> 
+                     <tbody>
+                      <tr> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_GOOGLE" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/plus.png" alt="plus" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_YELP" href="https://www.yelp.com/biz/wilma-alvarez-empire-realty-of-florida-hialeah-2" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/yelp.png" alt="yelp" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_REALTOR" href="https://www.realtor.com/realestateagents/wilma-alvarez___1193082_206999827" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/realtor.png" alt="realtor" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                       <td bgcolor="#f16060" style="background: #f16060; border-left:1px solid #ffffff;" width="40" height="40" valign="middle" align="center"> 
+                        <div align="center"> 
+                         <a data-oe-index="1" data-oe-parent-type="SOCIAL_LINK_ZILLOW" href="https://www.zillow.com/profile/user30313729" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images/zillow.png" alt="zillow" width="25" height="25" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                        </div> </td> 
+                      </tr> 
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+              <tr> 
+               <td bgcolor="#ffffff" align="center"> 
+                <div align="center"> 
+                 <a data-oe-parent-type="LEAD_IMAGE_PROFILE_PAGE" href="https://wilmaalvarez.myhomehq.biz/get-tips-for-your-home-goals-in-2023"><img src="https://content.outboundengine.com/templatesV2/U100025/C282919/YbBvIrnFz8ZfbxespyRdJg/1774266579kM5UZaMNiImsrhqZf0lQdw1673527061958S3CDIB93tNwPU1BDNvWQ.png" width="650" border="0" alt="Get Tips for Your Home Goals in 2023" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:650px; height:auto; min-height:1px;"></a> 
+                </div> </td> 
+              </tr> 
+              <tr class="hidef"> 
+               <td style="padding-left:13px; padding-right:13px; padding-top: 25px; text-align:center; max-width: 650px;" align="center" width="650px"> 
+                <center> 
+                 <div style="max-width:650px;"> 
+                  <!--[if (gte mso 9)|(IE)]><table width="650" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;"><tr><td width="650" valign="top"><![endif]--> 
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="max-width:650px;"> 
+                   <tbody>
+                    <tr> 
+                     <td align="center"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="650" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;"><tr><td width="208" valign="top"><![endif]--> 
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="padding-left:12px; padding-right:12px; padding-bottom:24px;" align="center"> 
+                          <div align="center"> 
+                           <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="display:block; text-decoration:none;" target="_blank"> 
+                            <table cellpadding="0" cellspacing="0" width="185" border="0" style="width: 185px;"> 
+                             <tbody>
+                              <tr> 
+                               <td align="center" width="63" height="63" bgcolor="#f16060" style="border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="text-decoration:none;" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-speech-bubble.png"> </a> </td> 
+                               <td bgcolor="#f2b561" height="63" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 0 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="text-decoration:none; color: #ffffff;" target="_blank"> Refer a Friend </a> </td> 
+                              </tr> 
+                             </tbody>
+                            </table> </a> 
+                          </div> </td> 
+                         <td style="padding-left:12px; padding-right:12px; padding-bottom:24px;" align="center"> 
+                          <div align="center"> 
+                           <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="1" href="https://www.empirerealtyfl.com/" style="display:block; text-decoration:none;" target="_blank"> 
+                            <table cellpadding="0" cellspacing="0" width="185" border="0" style="width: 185px;"> 
+                             <tbody>
+                              <tr> 
+                               <td align="center" width="63" height="63" bgcolor="#f16060" style="border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="1" href="https://www.empirerealtyfl.com/" style="text-decoration:none;" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-home.png"> </a> </td> 
+                               <td bgcolor="#f2b561" height="63" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 0 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="1" href="https://www.empirerealtyfl.com/" style="text-decoration:none; color: #ffffff;" target="_blank"> Search Now! </a> </td> 
+                              </tr> 
+                             </tbody>
+                            </table> </a> 
+                          </div> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                    </tr> 
+                   </tbody>
+                  </table> 
+                  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                 </div> 
+                </center> </td> 
+              </tr> 
+              <tr class="hidef"> 
+               <td style="padding-left:13px; padding-right:13px; text-align:center;" align="center"> 
+                <center> 
+                 <div style="max-width:650px;"> 
+                  <!--[if (gte mso 9)|(IE)]><table width="650" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;"><tr><td width="650" valign="top"><![endif]--> 
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="max-width:650px;"> 
+                   <tbody>
+                    <tr> 
+                     <td align="center"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="650" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;"><tr><td width="208" valign="top"><![endif]--> 
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="padding-left:12px; padding-right:12px; padding-bottom:24px;" align="center"> 
+                          <div align="center"> 
+                           <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="display:block; text-decoration:none;" target="_blank"> 
+                            <table cellpadding="0" cellspacing="0" width="185" border="0" style="width: 185px;"> 
+                             <tbody>
+                              <tr> 
+                               <td align="center" width="63" height="63" bgcolor="#f16060" style="border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="text-decoration:none;" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-home-report.png"> </a> </td> 
+                               <td bgcolor="#f2b561" height="63" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 0 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="1" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="text-decoration:none; color: #ffffff;" target="_blank"> How Much is My Home Worth? </a> </td> 
+                              </tr> 
+                             </tbody>
+                            </table> </a> 
+                          </div> </td> 
+                         <td style="padding-left:12px; padding-right:12px; padding-bottom:24px;" align="center"> 
+                          <div align="center"> 
+                           <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="1" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" style="display:block; text-decoration:none;" target="_blank"> 
+                            <table cellpadding="0" cellspacing="0" width="185" border="0" style="width: 185px;"> 
+                             <tbody>
+                              <tr> 
+                               <td align="center" width="63" height="63" bgcolor="#f16060" style="border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="1" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" style="text-decoration:none;" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-star.png"> </a> </td> 
+                               <td bgcolor="#f2b561" height="63" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 0 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="1" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" style="text-decoration:none; color: #ffffff;" target="_blank"> Write a Review </a> </td> 
+                              </tr> 
+                             </tbody>
+                            </table> </a> 
+                          </div> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                    </tr> 
+                   </tbody>
+                  </table> 
+                  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                 </div> 
+                </center> </td> 
+              </tr> 
+              <tr> 
+               <td class="p20" bgcolor="#ffffff" style="padding-bottom: 25px; padding-left:24px; padding-right:24px;"> 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                 <tbody>
+                  <tr> 
+                   <td class="blue gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-weight:300; font-size:20px; mso-text-raise:6px; color:#333333; margin-top:0px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:at-least; -webkit-font-smoothing:antialiased;">    <p>It’s a new year, and that means new possibilities.</p> <p>For some, that might mean buying a house for the first time. For existing homeowners, it could mean improving your current space — or selling it to move on to a place that feels like a better fit for your family.</p> <p>Whatever your plans, setting small milestones can help you get there. Are you ready to make those home-related goals a reality this year? </p><a data-oe-parent-type="READ_MORE" target="_blank" href="https://wilmaalvarez.myhomehq.biz/single-newsletter/get-tips-for-your-home-goals-in-2023" style="color:#ffffff; display:block; font-family:sans-serif; font-size:13px; line-height:34px; text-align:center; text-decoration:none; -webkit-text-size-adjust:none;"> </a>
+                    <table width="100%"> 
+                     <!--[if (gte mso 9)|(IE)]><tr><td><table style="background:#f16060; width: 184px;" width="184" border="0" cellspacing="0" cellpadding="0"><![endif]--> 
+                     <tbody>
+                      <tr class="read-more"> 
+                       <td height="34" style="background:#f16060; vertical-align: middle; text-align:center; width:240px; display: inline-block;"> <a data-oe-parent-type="READ_MORE" target="_blank" href="https://wilmaalvarez.myhomehq.biz/single-newsletter/get-tips-for-your-home-goals-in-2023" style="color:#ffffff; display:block; font-family:sans-serif; font-size:13px; line-height:34px; text-align:center; text-decoration:none; -webkit-text-size-adjust:none;"> START HERE &gt;&gt; </a> </td>  
+                      </tr> 
+                      <!--[if (gte mso 9)|(IE)]></table></td></tr><![endif]--> 
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+              <tr class="mobileRow mobileCta" style="display:none; mso-hide:all;"> 
+               <td align="center"> 
+                <!--[if !mso]><!--> 
+                <table> 
+                 <tbody>
+                  <tr> 
+                   <td align="center" style="padding: 10px 0;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="display:block;" target="_blank"> 
+                     <table width="185" height="65" style="width: 185px; height: 65px;"> 
+                      <tbody>
+                       <tr> 
+                        <td align="center" width="63" bgcolor="#f16060" style="width: 63px; border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-speech-bubble.png"> </a> </td> 
+                        <td bgcolor="#f2b561" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="9" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/refer-a-friend/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="color: #ffffff;" target="_blank"> Refer a Friend </a> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> </a> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                <table> 
+                 <tbody>
+                  <tr> 
+                   <td align="center" style="padding: 10px 0;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="2" href="https://www.empirerealtyfl.com/" style="display:block;" target="_blank"> 
+                     <table width="185" height="65" style="width: 185px; height: 65px;"> 
+                      <tbody>
+                       <tr> 
+                        <td align="center" width="63" bgcolor="#f16060" style="width: 63px; border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="2" href="https://www.empirerealtyfl.com/" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-home.png"> </a> </td> 
+                        <td bgcolor="#f2b561" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36584" data-oe-index="2" href="https://www.empirerealtyfl.com/" style="color: #ffffff;" target="_blank"> Search Now! </a> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> </a> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                <table> 
+                 <tbody>
+                  <tr> 
+                   <td align="center" style="padding: 10px 0;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="display:block;" target="_blank"> 
+                     <table width="185" height="65" style="width: 185px; height: 65px;"> 
+                      <tbody>
+                       <tr> 
+                        <td align="center" width="63" bgcolor="#f16060" style="width: 63px; border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-home-report.png"> </a> </td> 
+                        <td bgcolor="#f2b561" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="36587" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/home-report/oe-cp-HcuU8iPD-ycMt2n-Wv2uUshlxH6i7HwWQgrb3CG3x_aEwFYEQKhvfw/?cu__id=Q9UJEBESEw" style="color: #ffffff;" target="_blank"> How Much is My Home Worth? </a> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> </a> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                <table> 
+                 <tbody>
+                  <tr> 
+                   <td align="center" style="padding: 10px 0;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="2" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" style="display:block;" target="_blank"> 
+                     <table width="185" height="65" style="width: 185px; height: 65px;"> 
+                      <tbody>
+                       <tr> 
+                        <td align="center" width="63" bgcolor="#f16060" style="width: 63px; border: solid #ffffff; border-width: 2px 1px 2px 2px;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="2" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" target="_blank"> <img align="center" height="30" style="height: 30px;" src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/oe-icon-cta-star.png"> </a> </td> 
+                        <td bgcolor="#f2b561" class="gmail-font-fix" style="border: solid #ffffff; border-width: 2px 2px 2px 1px; color: #ffffff; padding: 10px; line-height: 1.3; text-transform: uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600;"> <a data-oe-parent-type="CALL_TO_ACTION" data-oe-parent-id="37169" data-oe-index="2" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" style="color: #ffffff;" target="_blank"> Write a Review </a> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> </a> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                <!--<![endif]--> </td> 
+              </tr> 
+              <tr> 
+               <td align="center"> 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                 <tbody>
+                  <tr> 
+                   <td style="padding-bottom:26px; text-align:center;" align="center"> 
+                    <center> 
+                     <div style="max-width:602px;"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="602" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:602px;"><tr><td width="602" valign="top" align="center"><![endif]--> 
+                      <div align="center"> 
+                       <img src="https://outboundengine.s3.amazonaws.com/resources/images/premium-content/tags/first-time-homebuyers.png" alt="" height="50" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; padding-bottom: 5px;"> 
+                      </div> 
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td valign="top"> 
+                          <table width="230" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:230px;"> 
+                           <tbody>
+                            <tr> 
+                             <td> 
+                              <div align="center" style="font-family:Times New Roman, Times, serif; font-size:16px; text-transform: uppercase; line-height:18px; color:#666666; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">
+                                First-time Homebuyers 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                     </div> 
+                    </center> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="p0 pb0" align="center" style="padding-left:12px; padding-right:12px; padding-bottom:0px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="626" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:626px;"><tr><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/OQ7k0X8Y" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/PwZ5Q-Ybx75gR2cbGWZeFQUoi_poWp-vcIhdITrOXYM.png" alt="Why More People May Qualify for a Loan" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> Why More People May Qualify for a Loan</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    Thanks to regulatory changes, it may be easier for consumers — and particularly borrowers of color — to obtain a mortgage. Here's what the new credit score rule entails and how it could help.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/OQ7k0X8Y" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/GPtyZyKF" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/IGkCIa7e1PVcpaLDyjNqC0-ACljE_A79aAGKvzbt0-0.png" alt="First-Time Buyer Tips From an HGTV Pro" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> First-Time Buyer Tips From an HGTV Pro</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    This popular HGTV personality knows a lot about buying and remodeling properties — she's even built her career on it. Want to see similar success when buying your house? These tips could help.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/GPtyZyKF" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong>
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                  </tr> 
+                  <tr> 
+                   <td style="padding-bottom:26px; text-align:center;" align="center"> 
+                    <center> 
+                     <div style="max-width:602px;"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="602" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:602px;"><tr><td width="602" valign="top" align="center"><![endif]--> 
+                      <div align="center"> 
+                       <img src="https://outboundengine.s3.amazonaws.com/resources/images/premium-content/tags/investment-properties.png" alt="" height="50" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; padding-bottom: 5px;"> 
+                      </div> 
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td valign="top"> 
+                          <table width="230" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:230px;"> 
+                           <tbody>
+                            <tr> 
+                             <td> 
+                              <div align="center" style="font-family:Times New Roman, Times, serif; font-size:16px; text-transform: uppercase; line-height:18px; color:#666666; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">
+                                Investment Properties 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                     </div> 
+                    </center> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="p0 pb0" align="center" style="padding-left:12px; padding-right:12px; padding-bottom:0px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="626" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:626px;"><tr><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/PYNn8WK0" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/kalqQT70Tbz4QCU6eCzIVOFk1R1Fic763GjomMEIe7I.png" alt="Read This Before You Renovate a Property" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> Read This Before You Renovate a Property</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    Hiring out renovations can be a dangerous game without the right contracts in place. If you need to be sure your project will get done on time and on budget, here's how to do it.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/PYNn8WK0" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/ijNpcJbL" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/Uvayc_0KLSO4Q0qVMixpcQW3i_kBJolv0PGwHU7TgC8.png" alt="How Can a Store Raise Your Home's Value?" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> How Can a Store Raise Your Home's Value?</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    The grocery stores located near a home can greatly impact its value. Want to ensure you're investing in an appreciating property? Here are some stores you should be prioritizing in your search.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/ijNpcJbL" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong>
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                  </tr> 
+                  <tr> 
+                   <td style="padding-bottom:26px; text-align:center;" align="center"> 
+                    <center> 
+                     <div style="max-width:602px;"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="602" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:602px;"><tr><td width="602" valign="top" align="center"><![endif]--> 
+                      <div align="center"> 
+                       <img src="https://outboundengine.s3.amazonaws.com/resources/images/premium-content/tags/luxury-market.png" alt="" height="50" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; padding-bottom: 5px;"> 
+                      </div> 
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td valign="top"> 
+                          <table width="230" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:230px;"> 
+                           <tbody>
+                            <tr> 
+                             <td> 
+                              <div align="center" style="font-family:Times New Roman, Times, serif; font-size:16px; text-transform: uppercase; line-height:18px; color:#666666; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">
+                                Luxury Market 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                     </div> 
+                    </center> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="p0 pb0" align="center" style="padding-left:12px; padding-right:12px; padding-bottom:0px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="626" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:626px;"><tr><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/dPUwol4p" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/gfjn2LjheDT6T2Dp7dph4oqfSY_-oAZe78hWLIn1n6U.png" alt="How to Build the Ultimate Upscale Garage" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> How to Build the Ultimate Upscale Garage</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    Your garage isn't just a storage space or a catch-all for miscellaneous items. It's a place to work, collect, display and more. Are you looking to elevate your garage space? Here's how.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/dPUwol4p" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/MpvRLsCh" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/ITJZiHWvZQBQJrjwJrRLBvL2c3qz456VON4E56yyS_g.png" alt="Home Staging Tips for Selling in Winter" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> Home Staging Tips for Selling in Winter</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    If you're listing your home this winter, you don't have to forgo holiday decor or choose a stark white palette. Just follow these five tips for staging — and get in touch for help.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/MpvRLsCh" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong>
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                  </tr> 
+                  <tr> 
+                   <td style="padding-bottom:26px; text-align:center;" align="center"> 
+                    <center> 
+                     <div style="max-width:602px;"> 
+                      <!--[if (gte mso 9)|(IE)]><table width="602" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:602px;"><tr><td width="602" valign="top" align="center"><![endif]--> 
+                      <div align="center"> 
+                       <img src="https://outboundengine.s3.amazonaws.com/resources/images/premium-content/tags/vacation-properties.png" alt="" height="50" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; padding-bottom: 5px;"> 
+                      </div> 
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                       <tbody>
+                        <tr> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td valign="top"> 
+                          <table width="230" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:230px;"> 
+                           <tbody>
+                            <tr> 
+                             <td> 
+                              <div align="center" style="font-family:Times New Roman, Times, serif; font-size:16px; text-transform: uppercase; line-height:18px; color:#666666; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">
+                                Vacation Homes 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                         <td style="width:49%" valign="top"> 
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                           <tbody>
+                            <tr> 
+                             <td style="border-bottom:2px solid #cccccc"> 
+                              <div style="font-size:6px; line-height:8px; height:8px; overflow:hidden; -webkit-text-size-adjust:none;">
+                                &nbsp; 
+                              </div> </td> 
+                            </tr> 
+                           </tbody>
+                          </table> </td> 
+                        </tr> 
+                       </tbody>
+                      </table> 
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                     </div> 
+                    </center> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="p0 pb0" align="center" style="padding-left:12px; padding-right:12px; padding-bottom:0px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="626" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:626px;"><tr><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/V6a6qkhQ" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/SV9Xt6hziXmFlJKfUhh1R1W0kgtNxuqMdCF-diompYo.png" alt="How Do You Style Your Rental Property?" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> How Do You Style Your Rental Property?</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    Need inspiration for your vacation rental? Take a look at the decor in these awe-inspiring international hotels. Whether in Uruguay, Italy, Ireland or Kenya, these far-off stays have it all.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/V6a6qkhQ" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td><td width="313" valign="top"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:313px; vertical-align:top; display:inline-block;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                      <tbody>
+                       <tr> 
+                        <td class="p0" width="313" style="padding-left:12px; padding-right:12px; padding-bottom:30px;"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f16060"> 
+                          <tbody>
+                           <tr> 
+                            <td bgcolor="#f16060" valign="top"> <a href="https://otbd.it/VyLwqtYd" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/56151/_Gm5DNq9CRMAcqK7hE2Q_6dxxhnS4fQ9EVdd3Zz-X3k.png" alt="A Creative Way to Buy a Vacation House" width="289" border="0" class="flex max" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100%; max-width:289px; height:auto; min-height:1px;"> </a> </td> 
+                           </tr> 
+                           <tr> 
+                            <td valign="top" height="255px" bgcolor="#f16060" style="padding-left:16px; padding-right:16px; padding-top:15px;"> <p class="white fs21 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; mso-text-raise:2px; color:#ffffff; margin-top:0px; margin-bottom:4px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> A Creative Way to Buy a Vacation House</p> <p class="white fs18 gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; mso-text-raise:1px; color:#ffffff; margin-top:0px; margin-bottom:30px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;">    There's more than one way to fund your next investment property. Just take it from this grandmother, who recently bought her New Hampshire getaway with a unique (and money-saving) method.  </p> </td> 
+                           </tr> 
+                           <tr> 
+                            <td height="40" valign="middle" align="center" bgcolor="#f2b561"> 
+                             <div class="white gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; font-weight:600; color:#ffffff; mso-margin-top-alt:10px; mso-margin-bottom-alt:10px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; mso-line-height-rule:exactly; letter-spacing:0.5px;"> 
+                              <strong> <a href="https://otbd.it/VyLwqtYd" style="display:block; color:#ffffff; text-decoration:none; padding:10px 0;" target="_blank">READ MORE</a> </strong>
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+              <tr> 
+               <td class="p20" bgcolor="#ffffff" style="padding-left:24px; padding-right:24px;"> 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                 <tbody>
+                  <tr> 
+                   <td bgcolor="#f1efd9" style="padding-top:15px; padding-left:24px; padding-right:24px;"> <p class="blue gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; mso-text-raise:3px; color:#5a5a5a; margin-top:0px; margin-bottom:5px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> <i>   Thank you for reading my newsletter. Please let me know if you have any questions, I am here to help!  </i></p> <p class="blue gmail-font-fix" align="left" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; mso-text-raise:3px; color:#5a5a5a; margin-top:0px; margin-bottom:15px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> - Wilma Alvarez</p> </td> 
+                  </tr> 
+                  <tr> 
+                   <td style="padding-bottom:20px;" align="center"> 
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                     <tbody>
+                      <tr> 
+                       <td style="padding-top:22px;" align="center"> 
+                        <div align="center"> 
+                        </div></td>
+                      </tr>
+                      <tr> 
+                       <td align="center"> <img src="https://content.outboundengine.com/templatesV2/U100025/C282919/YbBvIrnFz8ZfbxespyRdJg/1160022195AZjegfUYry7uJWWSNJ2Z3w1673527070222iGRNKDeCxH7Q8Z0qMdOy.png" alt="Wilma Alvarez" width="100" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; width:100px; max-width:100px; height:auto; min-height:1px;"> </td> 
+                      </tr>    
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" style="padding-bottom:10px;"> 
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                     <tbody>
+                      <tr> 
+                       <td align="center" style="padding-bottom:17px;"> 
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                         <tbody>
+                          <tr> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_PROFILE_PAGE" href="https://wilmaalvarez.myhomehq.biz/" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/oe_logo_circle.png" alt="oe_logo_circle" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_WEBSITE" href="https://www.empirerealtyfl.com/" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/company.png" alt="company" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_LINKEDIN" href="https://www.linkedin.com/in/wilma-alvarez-2624448" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/linkedin.png" alt="linkedin" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_FACEBOOK" href="https://www.facebook.com/451563231627107" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/facebook.png" alt="facebook" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                          </tr> 
+                         </tbody>
+                        </table> 
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                         <tbody>
+                          <tr> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_GOOGLE" href="https://www.google.com/search?q=Wilma+Alvarez+-+Realtor%2C+Miami+Lakes+Drive%2C+Miami+Lakes%2C+FL&amp;ludocid=52518146724753623#lrd=0x88d9a5e5878d7227:0xba94f9e7ca70d7,1" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/plus.png" alt="plus" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_YELP" href="https://www.yelp.com/biz/wilma-alvarez-empire-realty-of-florida-hialeah-2" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/yelp.png" alt="yelp" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_REALTOR" href="https://www.realtor.com/realestateagents/wilma-alvarez___1193082_206999827" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/realtor.png" alt="realtor" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                           <td style="padding-left:5px; padding-right:5px; padding-bottom:10px;"><a data-oe-index="2" data-oe-parent-type="SOCIAL_LINK_ZILLOW" href="https://www.zillow.com/profile/user30313729" target="_blank"> <img src="https://content.outboundengine.com/templates/V2/compressed/platform2/social-images-color/zillow.png" alt="zillow" width="35" height="35" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a></td> 
+                          </tr> 
+                         </tbody>
+                        </table> </td> 
+                      </tr> 
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" style="padding-bottom:44px;"> <p class="blue fs18 lh15 gmail-font-fix" align="center" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-weight:300; font-size:18px; line-height:30px; mso-text-raise:5px; color:#666666; margin-top:0px; margin-bottom:20px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> <span class="linkfix"> Wilma Alvarez&nbsp;| Empire Realty of Florida, Inc<br> Real Estate Broker<br> <a data-oe-parent-type="EMAIL" href="mailto:wilma@empirerealtyfl.com" style="color:#666666; text-decoration:none;" target="_blank">wilma@empirerealtyfl.com</a><br> 7900 Oak Lane<br> Suite 400<br> Miami Lakes , FL&nbsp;33016<br> <span style="font-weight:400;">Mobile:&nbsp;</span> <a data-oe-parent-type="PHONE" href="tel:(305) 812-2020" style="color:#666666; text-decoration:none; cursor:text;">(305) 812-2020</a><br> www.empirerealtyfl.com </span> </p> 
+                    <div align="center"> 
+                     <a data-oe-parent-type="USER_LOGO" data-oe-index="2" href="https://wilmaalvarez.myhomehq.biz/" target="_blank"> <img src="https://content.outboundengine.com/uploads/original/100025/czbUxZG_5ssXRva0Hn6CDr5da09GEyRCjMTDf4PrPZA.png" alt="Empire Realty of Florida, Inc" width="232" border="0" class="" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0;"> </a> 
+                    </div> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="pb15" style="padding-bottom:0px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="602" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:602px;"><tr><td width="602" valign="middle"><![endif]--> </td>
+                  </tr>
+                  <tr> 
+                   <td style="padding-bottom:16px;" align="center"> 
+                    <div align="center"> 
+                     <img src="https://content.outboundengine.com/uploads/original/100025/WL1V4LUU1AxjlRM9l4p_l4Wv-1u0CNyd9dDU3ys1cZw.gif" width="260" border="0" class="flex" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; max-width:260px;"> 
+                    </div> </td> 
+                  </tr> 
+                  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+                 </tbody>
+                </table> </td> 
+              </tr> 
+              <tr> 
+               <td bgcolor="#f2b561"> 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#f2b561"> 
+                 <tbody>
+                  <tr> 
+                   <td bgcolor="#f2b561" style=" background-color:#f2b561; padding-left:10px; padding-right:10px; padding-top:30px; padding-bottom:30px; font-size:0; text-align:center;"> 
+                    <!--[if (gte mso 9)|(IE)]><table width="630" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:630px; border-collapse:collapse;" bgcolor="#f2b561"><tr style="border-collapse:collapse; font-size:0; line-height:0;"><td width="360" valign="middle" bgcolor="#f2b561"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:360px; display:inline-block; vertical-align:middle;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;" bgcolor="#f2b561"> 
+                      <tbody>
+                       <tr style="border-collapse:collapse; font-size:0; line-height:0;"> 
+                        <td class="pb15" align="center" style="padding-right:10px; padding-left:10px;" bgcolor="#f2b561"> <p align="center" class="gmail-font-fix" style="font-family:Calibri, Arial, Helvetica, sans-serif; font-weight:300; font-size:15px; line-height:28px; mso-text-raise:6px; color:#ffffff; margin-top:0px; margin-bottom:0px; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; -webkit-font-smoothing:antialiased;"> I’d love to know what you think of&nbsp;my&nbsp;emails. Do&nbsp;you&nbsp;find&nbsp;them&nbsp;relevant?</p> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td><td width="270" valign="middle" bgcolor="#f2b561"><![endif]--> 
+                    <div class="max" style="width:100%; max-width:270px; display:inline-block; vertical-align:middle;"> 
+                     <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;" bgcolor="#f2b561"> 
+                      <tbody>
+                       <tr style="border-collapse:collapse; font-size:0; line-height:0;"> 
+                        <td width="50%" align="right" bgcolor="#f2b561"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                          <tbody>
+                           <tr> 
+                            <td style="padding-left:10px; padding-right:7px;" class="p10"> 
+                             <div align="right">
+                              <a data-oe-parent-type="FEEDBACK_POSITIVE" href="https://wilmaalvarez.myhomehq.biz/feedback/Qa50InWK4dgQERIT?cu__id=Q9UJEBESEw&amp;feedback_id=1&amp;template_metadata_id=19" target="_blank"><img src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/thumbup.png" alt="YES" width="118" border="0" class="flex" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; max-width:154px;"></a> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                        <td width="50%" align="left" bgcolor="#f2b561"> 
+                         <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                          <tbody>
+                           <tr> 
+                            <td style="padding-left:7px; padding-right:10px;" class="p10"> 
+                             <div align="left">
+                              <a data-oe-parent-type="FEEDBACK_NEGATIVE" href="https://wilmaalvarez.myhomehq.biz/feedback/Qa50InWK4dgQERIT?cu__id=Q9UJEBESEw&amp;feedback_id=2&amp;template_metadata_id=19" target="_blank"><img src="https://content.outboundengine.com/templates/V2/compressed/platform2/images/thumbdown.png" alt="NO" width="118" border="0" class="flex" style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; display:block; margin:0; border:0; max-width:154px;"></a> 
+                             </div> </td> 
+                           </tr> 
+                          </tbody>
+                         </table> </td> 
+                       </tr> 
+                      </tbody>
+                     </table> 
+                    </div> 
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+             </tbody>
+            </table> </td> 
+          </tr> 
+         </tbody>
+        </table> 
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+       </div> 
+      </center> </td> 
+    </tr> 
+   </tbody>
+  </table>  
+ 
+</body></html>

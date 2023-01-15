@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "../components/Carousel";
-import NewsLetter from "../components/NewsLetter";
+import SessionNewsLetter from "../components/SessionNewsLetter";
 import Sales from "../components/Sales";
+
 
 function Home() {
   return (
@@ -41,7 +42,7 @@ function Home() {
       </Box>
       <Box>
         <Box>
-          <NewsLetter/>
+          <SessionNewsLetter/>
         </Box>
         <Box></Box>
         <Box></Box>

@@ -8,11 +8,16 @@ import Review from "./pages/Review.jsx";
 import Contact from "./pages/Contact.jsx";
 import PropertySearch from "./pages/PropertySearch.jsx";
 
+
 function App() {
+
+
+
   return (
     <React.Fragment>
-      <NavBar />
-      <Home></Home>
+      {/* <Newsletter /> */}
+      {/* <NavBar />
+      <Home></Home> */}
       {/* <Routes>
         <Route path="/" component={<Home />} />
         <Route path="/newsletter" component={<Newsletter />} />
