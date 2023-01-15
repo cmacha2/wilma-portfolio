@@ -1,12 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import NavBar from "./components/Navbar.jsx";
+
 import Home from "./pages/Home.jsx";
-import Newsletter from "./pages/NewsLetter";
-import Review from "./pages/Review.jsx";
-import Contact from "./pages/Contact.jsx";
-import PropertySearch from "./pages/PropertySearch.jsx";
+
 
 
 function App() {
@@ -16,8 +14,8 @@ function App() {
   return (
     <React.Fragment>
       {/* <Newsletter /> */}
-      {/* <NavBar />
-      <Home></Home> */}
+       <NavBar />
+      <Home/>
       {/* <Routes>
         <Route path="/" component={<Home />} />
         <Route path="/newsletter" component={<Newsletter />} />
@@ -25,7 +23,7 @@ function App() {
         <Route path="/contact" component={<Contact />} />
         <Route path="/property-search" component={<PropertySearch />} />
       </Routes> */}
-      {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   );
 }

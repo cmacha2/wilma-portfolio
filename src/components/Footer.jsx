@@ -66,14 +66,15 @@ function Footer() {
     <Box
       sx={{
         display: "flex",
-        position: "fixed",
+        position: "relative",
         bottom: 0,
         left: 0,
         right: 0,
         height: "23%",
+        background:'#62af9e'
       }}
     >
-      <Box sx={{backgroundColor:'red',flex: 4, paddingX: 4, paddingY: 3 }}>
+      <Box sx={{flex: 4, paddingX: 4, paddingY: 3 }}>
         <Box>
         <Typography variant="body2">Wilma Alvarez</Typography>
         <Typography variant="body2">Real Estate Broker</Typography>

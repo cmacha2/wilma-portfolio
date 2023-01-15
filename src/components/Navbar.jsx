@@ -99,7 +99,7 @@ function DrawerAppBar(props) {
           </Typography> */}
           <Box sx={{width:"50%",flexDirection:'row', justifyContent:'space-between',display: { xs: 'none', sm: 'flex' ,color: '#fff'} }}>
             {navItems.map((item) => (
-              <Link key={item.name} to={item.link} style={{color:'#fff',textDecoration:"none",fontSize:20}}>
+              <Link key={item.name} to={item.link} style={{color:'#ca2c2c',textDecoration:"none",fontSize:20}}>
                 {item.name}
               </Link>
             ))}

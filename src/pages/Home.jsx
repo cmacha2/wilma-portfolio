@@ -3,6 +3,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import SessionNewsLetter from "../components/SessionNewsLetter";
 import Sales from "../components/Sales";
+import SessionReviews from "../components/SessionReviews";
 
 
 function Home() {
@@ -44,7 +45,9 @@ function Home() {
         <Box>
           <SessionNewsLetter/>
         </Box>
-        <Box></Box>
+        <Box>
+          <SessionReviews/>
+        </Box>
         <Box></Box>
         <Box></Box>
       </Box>
